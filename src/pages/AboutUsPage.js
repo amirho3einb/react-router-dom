@@ -3,13 +3,8 @@ import Layout from "../Layout/Layout";
 
 const AboutUS = (props) => {
     return ( 
-        <Layout>
-            <p>اینجا صفحه درباره ما است</p>
-        </Layout>
-            
-      
-      
-     );
+        <p>اینجا صفحه درباره ما است</p>
+    );
 }
  
 export default AboutUS;

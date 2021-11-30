@@ -3,13 +3,8 @@ import Layout from "../Layout/Layout";
 
 const HomePage = (props) => {
     return ( 
-        <Layout>
-            <p>اینجا صفحه خانه است</p>
-        </Layout>
-            
-         
-
-     );
+        <p>اینجا صفحه خانه است</p>
+    );
 }
  
 export default HomePage;
