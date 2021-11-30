@@ -1,4 +1,4 @@
-import { Link, NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
 const items = [
     { name: "Home", to: "/", exact: true},
