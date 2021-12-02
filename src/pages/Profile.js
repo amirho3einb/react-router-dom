@@ -1,6 +1,19 @@
+import { Route } from "react-router";
+import Dashboard from "../components/dashboard";
+import Downloads from "../components/downloads";
+import SideBar from "../components/SideBar";
+
+
 const Profile = () => {
     return ( 
-        <h2>welcome to App</h2>
+        <div className="profile">
+            <SideBar />
+            <Route path="/profile/dashboard" component={Dashboard}/>
+            <Route path="/profile/downloads" component={Downloads}/>
+            <div>welcome to App</div>
+            
+            
+        </div>
     );
 }
 export default Profile;

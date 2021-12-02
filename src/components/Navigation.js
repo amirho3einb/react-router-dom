@@ -9,7 +9,7 @@ const items = [
 ]
 const Navigation = (props) => {
    
-    console.log(props);
+    //console.log(props);
     return ( 
             <nav>
                 <ul>
