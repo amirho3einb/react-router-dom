@@ -11,7 +11,7 @@ const routes = [
     {path: '/blogs', component: BlogPage},
     {path: '/about-us', component: AboutUS},
     {path: '/profile', component: Profile},
-    {path: '/post/:id?([0-9]+)', component: PostPage}, // optional
+    {path: '/post/:id([0-9]+)?', component: PostPage}, // optional
     {path: '/', component: HomePage, exact: true},
     { component: NotFound }, // should be last route
 ]

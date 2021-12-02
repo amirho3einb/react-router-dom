@@ -13,7 +13,7 @@ const BlogPage = () => {
                 return(
                     <li key={item.to}>
                         <Link 
-                            to={item.to}
+                            to={{ pathname: item.to, search: "sort=name"}}
                         >
                             {item.name}
                         </Link>
