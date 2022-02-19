@@ -1,19 +1,16 @@
-import { Route } from "react-router";
-import Dashboard from "../components/dashboard";
-import Downloads from "../components/downloads";
+import { Outlet } from "react-router";
 import SideBar from "../components/SideBar";
 
-
 const Profile = () => {
-    return ( 
-        <div className="profile">
-            <SideBar />
-            <Route path="/profile/dashboard" component={Dashboard}/>
-            <Route path="/profile/downloads" component={Downloads}/>
-            <div>welcome to App</div>
-            
-            
-        </div>
-    );
-}
+  return (
+    <div className="profile">
+      <SideBar />
+      <Outlet />
+      {/* <Routes>
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="downloads" element={<Downloads />} />
+      </Routes> */}
+    </div>
+  );
+};
 export default Profile;

@@ -5,16 +5,17 @@ import BlogPage from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
 import Blog from "./components/Blog";
 import PostPage from "./pages/PostPage";
+import { Navigate } from "react-router-dom";
 
 const routes = [
-    {path: '/blogs/:id', component: Blog},
-    {path: '/blogs', component: BlogPage},
-    {path: '/about-us', component: AboutUS},
-    {path: '/profile', component: Profile},
-    {path: '/post/:id([0-9]+)?', component: PostPage}, // optional
-    {path: '/', component: HomePage, exact: true},
-    { component: NotFound }, // should be last route
-]
+  { path: "/blogs/:id", element: <Blog /> },
+  { path: "/blogs", element: <BlogPage /> },
+  { path: "/about-us", element: <AboutUS /> },
+  { path: "/profile/*", element: <Profile /> },
+  { path: "/post/:id", element: <PostPage /> }, // optional
+  { path: "/", element: <Navigate replace to="/blogs" /> },
+  { element: <NotFound /> }, // should be last route
+];
 export default routes;
 
 // ([A-Za-z]+)
